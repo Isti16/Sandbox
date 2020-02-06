@@ -32,7 +32,8 @@ export default class Content {
         // Kezd a kódolást innen -->
 
         var age: number = 32; // number variable
-        var name: string = "John"; // string variable
+        var name: string = "John";
+        let isMarried: boolean = false; // string variable
         var isUpdated: boolean = true; // Boolean variable
         let próba: string = "Alma";
         const próba2: string = "Alma2";
@@ -46,6 +47,9 @@ export default class Content {
         res.write("\n\nSzámok: ");
         res.write(`\n${age}`);
         res.write(`\n${name} ${age} éves`);
+
+        res.write("\n\nHázas-e? : ");
+        res.write(`\n${isMarried}`);
 
         // <---- Fejezd be a kódolást
 
