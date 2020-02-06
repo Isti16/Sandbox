@@ -69,6 +69,9 @@ export default class Content {
         res.write("\n\n(Tuple) A hónap dolgozója: ");
         res.write(`\n${bestPerson[1]}`);
 
+        res.write("\n\nEnum (Programozás munka számának kiírása):");
+        res.write(`\n${Jobs.Programmer}`);
+
         // <---- Fejezd be a kódolást
 
         res.write("</pre></form></body></html>");
