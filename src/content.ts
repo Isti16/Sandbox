@@ -39,6 +39,12 @@ export default class Content {
         const próba2: string = "Alma2";
         let fruits: string[] = ["Alma", "Körte", "Narancs"];
         var bestPerson: [number, string, boolean] = [1, "Miklós", true];
+        enum Jobs {
+            Programmer = 1,
+            Postman = 5,
+            Teacher = 5,
+            Farmer = 10
+        }
 
         res.write(`${age} ${name} ${isUpdated} `);
 
@@ -57,7 +63,7 @@ export default class Content {
         res.write(`\n${fruits[1]}`);
         res.write("\nGyümölcsök lista kiírása for ciklussal: ");
         for (var index in fruits) {
-            res.write(`${fruits[index]} `); // output: Alma Körte Narancs
+            res.write(`${fruits[index]},`); // output: Alma Körte Narancs
         }
 
         res.write("\n\n(Tuple) A hónap dolgozója: ");
