@@ -38,7 +38,9 @@ export default class Content {
         const próba2: string = "Alma2";
 
         res.write(`${age} ${name} ${isUpdated} `);
-        res.write(`${próba} ${próba2}`);
+
+        res.write("\n\nStringek");
+        res.write(`\n${próba} ${próba2}`);
 
         // <---- Fejezd be a kódolást
 
