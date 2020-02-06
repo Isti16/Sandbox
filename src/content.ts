@@ -35,8 +35,10 @@ export default class Content {
         var name: string = "John"; // string variable
         var isUpdated: boolean = true; // Boolean variable
         let próba: string = "Alma";
+        const próba2: string = "Alma2";
 
-        res.write(`${age} ${name} ${isUpdated}`);
+        res.write(`${age} ${name} ${isUpdated} `);
+        res.write(`${próba} ${próba2}`);
 
         // <---- Fejezd be a kódolást
 
