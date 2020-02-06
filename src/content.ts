@@ -38,6 +38,7 @@ export default class Content {
         let próba: string = "Alma";
         const próba2: string = "Alma2";
         let fruits: string[] = ["Alma", "Körte", "Narancs"];
+        var bestPerson: [number, string, boolean] = [1, "Miklós", true];
 
         res.write(`${age} ${name} ${isUpdated} `);
 
@@ -49,7 +50,7 @@ export default class Content {
         res.write(`\n${age}`);
         res.write(`\n${name} ${age} éves`);
 
-        res.write("\n\nHázas-e? : ");
+        res.write("\n\nHázas-e?: ");
         res.write(`\n${isMarried}`);
 
         res.write("\n\nGyümölcsök Lista második eleme (körte): ");
@@ -58,6 +59,9 @@ export default class Content {
         for (var index in fruits) {
             res.write(`${fruits[index]}`); // output: Alma Körte Narancs
         }
+
+        res.write("\n\n(Tuple) A hónap dolgozója: ");
+        res.write(`\n${bestPerson[1]}`);
 
         // <---- Fejezd be a kódolást
 
