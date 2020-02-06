@@ -57,7 +57,7 @@ export default class Content {
         res.write(`\n${fruits[1]}`);
         res.write("\nGyümölcsök lista kiírása for ciklussal: ");
         for (var index in fruits) {
-            res.write(`${fruits[index]}`); // output: Alma Körte Narancs
+            res.write(`${fruits[index]} `); // output: Alma Körte Narancs
         }
 
         res.write("\n\n(Tuple) A hónap dolgozója: ");
