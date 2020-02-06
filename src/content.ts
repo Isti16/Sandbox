@@ -39,9 +39,13 @@ export default class Content {
 
         res.write(`${age} ${name} ${isUpdated} `);
 
-        res.write("\n\nStringek");
+        res.write("\n\nStringek: ");
         res.write(`\n${próba} ${próba2}`);
-        res.write(`\n Az ${próba} leesett a fáról.`);
+        res.write(`\nAz ${próba} leesett a fáról.`);
+
+        res.write("\n\nSzámok: ");
+        res.write(`\n${age}`);
+        res.write(`\n${name} ${age} éves`);
 
         // <---- Fejezd be a kódolást
 
