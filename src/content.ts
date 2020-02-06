@@ -37,6 +37,7 @@ export default class Content {
         var isUpdated: boolean = true; // Boolean variable
         let próba: string = "Alma";
         const próba2: string = "Alma2";
+        let fruits: string[] = ["Alma", "Körte", "Narancs"];
 
         res.write(`${age} ${name} ${isUpdated} `);
 
@@ -50,6 +51,9 @@ export default class Content {
 
         res.write("\n\nHázas-e? : ");
         res.write(`\n${isMarried}`);
+
+        res.write("\n\nGyümölcsök Lista második eleme (körte): ");
+        res.write(`\n${fruits[1]}`);
 
         // <---- Fejezd be a kódolást
 
