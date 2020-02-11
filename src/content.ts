@@ -1,4 +1,5 @@
-﻿/* eslint-disable @typescript-eslint/no-unused-vars */
+﻿/* eslint-disable @typescript-eslint/explicit-function-return-type */
+/* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable @typescript-eslint/no-inferrable-types */
 /* eslint-disable no-var */
 /* eslint-disable prefer-const */
@@ -45,6 +46,9 @@ export default class Content {
             Teacher = 5,
             Farmer = 10
         }
+        let kod: string | number;
+        kod = 123; // OK
+        kod = "ABC"; // OK
 
         res.write(`${age} ${name} ${isUpdated} `);
 
@@ -71,6 +75,16 @@ export default class Content {
 
         res.write("\n\nEnum (Programozás munka számának kiírása):");
         res.write(`\n${Jobs.Programmer}`);
+
+        res.write("\n\nUnion: ");
+        function displayType(code: string | number) {
+            if (typeof kod === "number") res.write("A kód egy szám.");
+            else if (typeof kod === "string") res.write("A kód egy string");
+        }
+        res.write("\nSzámnál:");
+        displayType(123);
+        res.write("\nStringnél:");
+        displayType("ASD");
 
         // <---- Fejezd be a kódolást
 
