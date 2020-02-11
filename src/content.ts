@@ -77,7 +77,7 @@ export default class Content {
         res.write(`\n${Jobs.Programmer}`);
 
         res.write("\n\nUnion: ");
-        function displayType(code: string | number) {
+        function displayType(kod: string | number) {
             if (typeof kod === "number") res.write("A kód egy szám.");
             else if (typeof kod === "string") res.write("A kód egy string");
         }
